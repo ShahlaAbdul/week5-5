@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <!-- <ul>
+        <li class="sheher">BAKU</li>
+        <li class="sheher">SHEKI</li>
+        <li class="sheher">LENKARAN</li>
+        <li class="sheher">QAZAX</li>
+    </ul>
+  -->
+
+  <form action="">
+    <input id="color" type="text" >
+    <input id="width" type="number" >
+    <button id="button" class="button">change</button>
+  </form>
+  <div id="color_box" class="box" style="width: 50px; height: 50px; background-color: hotpink; border: 2px solid black; transition: all 2s;"></div>
+
+    <script>
+        const inputcolor=document.getElementById("color")
+        const inputwidth=document.getElementById("width")
+        const inputbutton=document.getElementById("button")
+        const inputcolor_box=document.getElementById("color_box")  
+
+        if ((inputcolor.value=="" || inputwidth.value=="")) {
+            alert("inputlari daxil edin")
+            
+        }
+          inputcolor.addEventListener("click", function(){
+            color_box.style.backgroundColor=inputcolor.value ;
+            color_box.style.width=inputwidth.value+"px";
+
+      
+            
+            
+        }
+          )
+
+
+    // const ul=document.querySelectorAll("ul li")
+    // console.log(ul);
+    // for (let i = 0; i < ul.length; i++) {
+    //     ul[i].addEventListener("click",function(){
+            
+    //         ul[i].remove("ul li")
+
+    //         // console.log(ul[i].textContent)
+        
+        
+    //     })
+    // }    
+        //  const button1=document.querySelector(".button1")
+        //  button1.addEventListener("click",(event)=>{
+        //     alert(`${button1.textContent}`)
+        //  })
+
+        // ---------------------buttonnn------------------------
+
+        // const button1=document.querySelector(".button1")
+        // button1.addEventListener("click",function(){
+        //     const div=document.createElement("div");
+        //     document.body.append(div)
+        //     div.textContent=button1.textContent
+            
+        // });
+
+        
+        
+       
+    </script>
+
+   
+</body>
+</html>
+
+
+
+// <!-- 
+// const div=document.createElement("div")
+//         // div.textContent="men divem"
+//         // div.classList.add("active")
+//         // container.append(div) -->
+
+// <!-- 1/ div container =document.getElemenid("container")
+
+//     2)const div =document.createElementById("div")--------------element yaratmaq
+//      div.textcontent="men divem" 
+//      document.body.append(div,a)  -------yaratdigimiz elementi basqaqa bir elementin daxiline atmaq(bvir nece elementi ata bilerik)
+//      document.body.appendchil(div)----------sadece bir elementi ata bilerik
+
+//      3)div.classlist.add("active")- class yaratama ozelligi
+//      4)div.
+
+
+//      -->
+
+
+//         <!-- <img src="" alt="">
+
+//     <div id="container" style="border: 3px solid blueviolet; "></div>
+//     <h1>HEAD</h1>
+
+//     <script>
+//         const container=document.getElementById("container")
+//         const img=document.createElement("img")
+        
+//     </script> -->
+
+//     <!-- <button class="button1" style=" background-color: aqua ; width: 70px; height: 40px;">click</button>
+//     <div> </div> -->
+
+
+
+     
