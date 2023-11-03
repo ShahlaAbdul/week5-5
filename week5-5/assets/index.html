@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/15104206/pexels-photo-15104206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <style>
+        body{
+            min-height: 100vh;
+        }
+        img{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+
+        }
+    </style>
+    
+    <script>
+        const img=document.querySelector("img")
+
+        let x=0
+        let y=0
+        document.body.addEventListener("keydown",function(e){
+            switch (e.code) {
+                   case "KeyA":
+                    x-=20;
+                    img.style.left=x+"px"
+                    break;
+                    case "KeyD":
+                    x+=20
+                    img.style.left=x+"px"
+                    break;
+                    case "KeyW":
+                    y-=20
+                    img.style.top=y+"px"
+                    break;
+                    case "KeyS":
+                    y+=20
+                    img.style.top=y+"px"
+                    break;
+                  
+
+            
+                default:
+                    break;
+            }
+        })
+    </script>
+</body>
+</html> -->

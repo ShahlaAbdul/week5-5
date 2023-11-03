@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="clicks">
+                <button>hediyeni ac</button>
+                <button>hediyeni ac</button>
+                <button>hediyeni ac</button>
+                <button>hediyeni ac</button>
+                
+        
+            </div>
+            <div class="hediyeler">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+
+        </div>
+
+        <script>
+
+            const container=document.querySelectorAll(".container")
+            const clicks=document.querySelectorAll("div")
+            const button=document.querySelectorAll("button")
+            const img=document.querySelectorAll(" img")
+
+            for (let i = 0; i < button.length; i++) {
+                
+                button[i].addEventListener("click",function(){
+                img[i].style.filter="blur(0px)"
+                button[i].style.visibility="hidden"
+            })
+            }
+            
+    
+    
+        </script>
+
+    </main>
+  
+    
+   
+</body>
+</html>
+
+
+
+    <!-- <form action="">
+        <input id="username" type="text" name="">
+        <input id="password" name="" type="password">
+        <button>clickme</button>
+
+    </form> -->
+
+<!-- <script>
+        
+    const form=document.querySelector("form")
+    const input=document.querySelector("input")
+    const username=document.querySelector("#username")
+    const password=document.querySelector("password")
+    console.log(password.value);
+
+    b
+
+</script> -->
+<!-- ?-------------------------------------------------------------------------------------------------- -->
+<!-- <div class="btn1">
+    <span>clickme</span>
+</div>
+<nav>
+    <div class="navbar">
+        <ul class="left_nav">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PROFİLE</li>
+            <li>CONTACT</li>
+            <li>BLOG</li>
+        </ul>
+        <div class="x_button">
+            <span>x</span>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    const btn1=document.querySelector("span")
+    const navbar=document.querySelector("nav")
+    const x_button=document.querySelector("button")
+
+    btn1.addEventListener("click", function(){
+        btn1.style.cursor="pointer"
+         navbar.style. transform="translate(200px,0)"
+    })
+
+    x_button.addEventListener("click", function(){
+        navbar.style. transform="translate(-200px,0)"
+
+    }) -->
+
